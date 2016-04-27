@@ -1,0 +1,53 @@
+
+body{
+
+ }
+
+a{
+	transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+a.post-link{
+	color: black;
+	 
+}
+
+a.post-link:hover{
+
+	color: #6C6C6C;
+	text-decoration: none;
+}
+
+.icon-padding{
+	padding-right: 8px;
+}
+
+.img-ava{
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.post-content{
+	margin-top: 20px;
+}
+
+img, .img, .thumbnail {
+	margin-top: 5px; 
+	margin-bottom: 5px;
+	max-width: 40%;
+	display: block;
+}
+
+.nav-sosmed > li > a {
+	padding: 8px 0px !important;
+	transition: none;
+}
+
+.nav-sosmed > li > a:hover, .nav-sosmed > li > a:focus{
+	color: black !important;
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: 0px;
+}

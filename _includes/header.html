@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="visible-xs hidden-md hidden-lg navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="menu">
+       <ul class="nav nav-sosmed navbar-nav navbar-right hidden-xs hidden-sm">
+         <li><a target="_blank" href="https://telegram.me/{{ site.telegram_username }}"><i class="fa fa-paper-plane"></i></a></li>
+         <li><a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a></li>
+         <li><a target="_blank" href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a></li>
+         <li><a target="_blank" href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a></li>
+         <li><a target="_blank" href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></li>                           
+         </ul>
+
+      <form class="navbar-form navbar-right hidden-sm" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Cari Artikel">
+          </div>
+       </form>
+  
+    {% assign pages = site.pages | sort:"position"  %}
+      <ul class="nav navbar-nav navbar-left">
+        {% if paginator.page %}
+          <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
+        {% else %}
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+        {% endif %}
+
+
+        {% for my_page in pages %}
+         {% if my_page.navi %}
+          {% if my_page.title %}
+            {% if my_page.url == page.url %}
+              <li class="active"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+              {% else %}
+              <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            {% endif %}
+          {% endif %}
+         {% endif %} 
+        {% endfor %}
+    
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

@@ -5,7 +5,7 @@ author:      Ali
 description: "Situ Belajar Pemrograman dengan Pustaka GTK+"
 baseurl:     ""
 url:         "/"
-domain:      "https://gtkplus.github.io"
+domain:      "http://gtkplus.github.io/"
 date_format: "%b %-d, %Y"
 
 # Google services

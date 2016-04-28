@@ -3,8 +3,9 @@ layout:     post
 title:      Berkenalan dengan GTK+
 date:       2016-04-27 10:52:56 +0700 
 category: getting-started
-summary: Sebelum memulai belajar mengenai GTK+ ada kiranya kita mulai dari perkenalan. Seperti pepatah bilang "tak kenal maka tak sayang, tak sayang maka tak cinta" oleh karena itu, jika kita ingin mencintai sesuatu maka kenalilah terlebih dahulu. Berlaku pula dengan GTK+ ini, jika kita sudah mengenalinya kemungkinan akan ada sedikit rasa cinta yang membuatnya akan semakin penasaran. Jika sudah penasaran, maka kemungkinan pula kita akan terus menerus menggali, mengetahuinya lebih dalam.
 ---
+
+Sebelum memulai belajar mengenai GTK+ ada kiranya kita mulai dari perkenalan. Seperti pepatah bilang `tak kenal maka tak sayang, tak sayang maka tak cinta` oleh karena itu, jika kita ingin mencintai sesuatu maka kenalilah terlebih dahulu. Berlaku pula dengan GTK+ ini, jika kita sudah mengenalinya kemungkinan akan ada sedikit rasa cinta yang membuatnya akan semakin penasaran. Jika sudah penasaran, maka kemungkinan pula kita akan terus menerus menggali, mengetahuinya lebih dalam.
 
 ### Apa itu GTK+?
 
